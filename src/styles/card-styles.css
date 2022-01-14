@@ -1,0 +1,75 @@
+body {
+  display: grid;
+  place-items: center;
+  background: var(--main-dark-blue);
+  height: 100vh;
+}
+
+.card-container {
+  max-width: 31em;
+  padding: 20px;
+  background: var(--card-dark-blue);
+  border-radius: 15px;
+  box-shadow: 0 10px 10px black;
+}
+
+.card-header {
+  max-height: 20%;
+}
+
+.card-header img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.card-body .card-title {
+  color: var(--white);
+  margin: 1em 0;
+  font-size: 2.2em;
+}
+
+.card-body .card-description {
+  margin: 1em 0;
+  font-size: 1.7em;
+}
+
+.card-body .icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+  font-size: 1.5em;
+}
+
+.card-body .icons .icon-ethereum {
+  color: var(--cyan);
+  background-image: url("../assets/images/icon-ethereum.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-body .icons .icon-clock {
+  background-image: url("../assets/images/icon-ethereum.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  border-top: 0.1px solid var(--line-dark-blue);
+  font-size: 1.4em;
+}
+
+.card-footer img {
+  border: 1px solid white;
+  border-radius: 100%;
+  max-width: 10%;
+  margin: 0.6em 1em 0.6em 0;
+}
+
+.card-footer b {
+  color: var(--white);
+}

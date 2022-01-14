@@ -37,22 +37,37 @@ body {
 .card-body .icons {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 1em 0;
   font-size: 1.5em;
 }
 
-.card-body .icons .icon-ethereum {
+.card-body .icons div {
+  display: inline-flex;
+  align-items: center;
+}
+
+.card-body .icons div:first-child {
   color: var(--cyan);
+}
+
+.card-body .icons .icon {
+  display: inline-block;
+  margin-right: 0.5em;
+  width: 1em;
+  height: 1.2em;
+}
+
+.card-body .icons .icon-ethereum {
   background-image: url("../assets/images/icon-ethereum.svg");
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
 }
 
 .card-body .icons .icon-clock {
-  background-image: url("../assets/images/icon-ethereum.svg");
+  background-image: url("../assets/images/icon-clock.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  /*   background-size: cover; */
   background-position: center;
 }
 
